@@ -233,10 +233,34 @@ GROUP BY
 ---
 
 ## 📊 Section 3: Exploratory Data Analysis (Excel)
-*(Documentation Pending Details)*
+*Deep-dive diagnostics, statistical distributions, and automated calculations executed inside Microsoft Excel.*
+
+### Core Analytical Operations Performed:
+* **Descriptive Statistics:** Generated mean, median, standard deviation, and data range metrics to analyze customer income and spending dispersion.
+* **Outlier Profiling:** Constructed box-and-whisker plots on the Income variable to isolate and flag extreme data skewness.
+* **Time-Series Cohorts:** Built historical line charts tracking monthly customer enrollment velocities based on the transformed registration dates.
+* **Demographic Cross-Tabulations:** Formulated custom Pivot Tables mapping multi-tiered campaign response frequencies across varying customer education levels and marital statuses.
+
+📁 *The full analytical workbook file is uploaded and available in the [3_Exploratory_Analysis_Excel](./3_Exploratory_Analysis_Excel/) directory.*
 
 ---
 
 ## 📉 Section 4: Interactive Dashboard Design (Power BI / Tableau)
-*(Documentation Pending Details)*
+*Transforming structured calculation tables into responsive executive storytelling dashboards.*
+
+### Analytical Models & DAX Measures Constructed:
+1. **Dynamic Customer Ingestion Profile (Stacked Column Chart):** Binned baseline incomes into static $5,000 increments, mapping distinct counts of active customer IDs against their registration years.
+2. **Socioeconomic Matrix (Clustered Bar Chart):** Evaluated macro-demographic intersections by grouping total client counts by highest education tier alongside marital status groupings.
+3. **Core Purchasing Correlation Model (Scatter Chart):** Evaluated spending paths by plotting overall consumer income relative to a custom-engineered DAX feature tracking the percentage of income spent on luxury items.
+4. **Category Spend Aggregation (Clustered Column Chart):** Deployed robust category evaluation measures tracking precise average product investments across separate groups:
+   ```dax
+   Sum of MntWines average per Education = 
+   AVERAGEX(
+       KEEPFILTERS(VALUES('marketing_campaign'[Education])),
+       CALCULATE(SUM('marketing_campaign'[MntWines]))
+   )
+   ```
+
+📁 *The interactive report model file is uploaded and available in the [4_Dashboards_PowerBI](./4_Dashboards_PowerBI/) directory.*
+
 
