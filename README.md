@@ -33,7 +33,7 @@ An analysis of 2,240 customer encounters was conducted using structural SQL quer
 PromoScope Insights is experiencing declining customer conversion rates and increased promotional waste across its retail marketing operations. This project delivers an integrated business analytics framework—leveraging SQL relational database structuring, Excel diagnostics, and interactive Power BI dashboards. By transforming data from 2,240 customer interactions into structured insights, this framework enables marketing strategists to perform precise behavioral micro-segmentation, improve promotional conversion rates above the baseline 14.9%, and recover marketing ROI.
 
 ### 2. Project Objectives
-* **Data Integration:** Clean, format, and ingestion a relational customer database containing 2,240 distinct customer touchpoints into a centralized environment.
+* **Data Integration:** Clean, format, and ingest a relational customer database containing 2,240 distinct customer touchpoints into a centralized environment.
 * **Exploratory Profiling:** Use structured SQL aggregations and advanced Excel logic features to isolate peak-spending products and segment web interaction trends by age tiers.
 * **Interactive Business Intelligence:** Construct a dynamic, executive-ready Power BI reporting platform to visualize multi-tiered socio-demographic intersections and clear bottlenecks in promotional outreach campaigns.
 
